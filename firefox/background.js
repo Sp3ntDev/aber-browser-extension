@@ -9,7 +9,7 @@ function onCreated() {
 
 browser.menus.create({
 	id: "idlookup",
-	title: "What is this",
+	title: "Module Lookup",
 	contexts: ["selection"]
 }, onCreated);
 
