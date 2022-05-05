@@ -1,0 +1,109 @@
+
+
+@font-face {
+    font-family: 'Bree_Serif';
+    src: url('BreeSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    
+    background-color: #006cf9;
+    color:#ececec;
+    text-shadow: 0px 1px #cfcfcf;
+
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: rgb(176, 240, 81);
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: rgb(142, 194, 63);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.nobold {
+    font-weight: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.noitalic {
+    font-style: normal;
+}
+
+.footer {
+    font-size: smaller;
+    text-align: center;
+}
+
+.moduleHolder {
+    
+    border-top: 2px solid #ececec;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ececec;
+    
+}
+
+.emptymodules {
+    text-align: center;
+}
+
+.help {
+    text-align: center;
+}
+
+form {
+    display: flex;
+}
+
+input[type="button"] {
+    float: 19;
+    text-align: center;
+    background-color: #79b3ff;
+    border-style: none;
+    padding: 5px;
+    
+    margin-left: 5px;
+    transition: background-color 0.2s;
+}
+
+input[type="button"]:hover {
+    background-color: #4d72a3;
+    
+}
+
+input[type="text"] {
+    flex: 80;
+    text-align: center;
+    background-color: #79b3ff;
+    border: 0px !important;
+    transition: background-color 0.2s;
+}
+
+input[type="text"]:hover {
+    background-color: #4d72a3;
+    
+}
+
+#modulescroll {
+    padding-top: 10px;
+    overflow-y: auto;
+}
+
+.title {
+    text-align: center;
+}
