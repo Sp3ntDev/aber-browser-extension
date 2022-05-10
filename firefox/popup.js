@@ -1,7 +1,7 @@
 
-var moduleDisplayHTML = '<div class="moduleHolder">\n<div class="text italic title"><span id="idout" class="bold noitalic">{0}</span> - <span id="titleout" class="bold noitalic">{1}</span></div>\n<div class="text italic">Dept: <span id="deptout" class="bold noitalic">{2}</span></div>\n<div class="text italic">URL: <a id="urlout" class="bold noitalic" href="{3}">{4}</a></div>\n</div>'
-var emptyDisplayHTML = '<div class="text emptymodules bold">No results ¯\\_(ツ)_/¯</div>'
-var firstuse = '<div class="text help bold"><span>Enter a search query or</span>\n<span>right click on selected text</span>\n<span>to search</span></div>'
+var moduleDisplayHTML = '<div class="moduleHolder">\n<div class="text italic title"><span id="idout" class="noitalic">{0}</span> - <span id="titleout" class="noitalic">{1}</span></div>\n<div class="text italic">Dept: <span id="deptout" class="noitalic">{2}</span></div>\n<div class="text italic">URL: <a id="urlout" class="noitalic" href="{3}">{4}</a></div>\n</div>'
+var emptyDisplayHTML = '<div class="text emptymodules">No results ¯\\_(ツ)_/¯</div>'
+var firstuse = '<div class="text help"><span>Enter a search query or</span>\n<span>right click on selected text</span>\n<span>to search</span></div>'
 
 modules = {}
 function loadModules(callback) {
@@ -69,7 +69,7 @@ function displayMultilpeModules(modules) {
         var firstuseobj = $.parseHTML(firstuse);
         $(modulescroll).append(obj)
         $(modulescroll).append(firstuseobj)
-    } 
+    }
 
     
     
@@ -119,8 +119,6 @@ window.onload = function(){
                     document.getElementById("idin").value = msg
                 }
         });
-
-        
 
         document.getElementById('searchbtn').onclick = searchBtnClicked;
         

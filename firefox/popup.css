@@ -9,10 +9,21 @@
 
 body {
     
-    background-color: #006cf9;
+    background-color: #6596ff;
     color:#ececec;
-    text-shadow: 0px 1px #cfcfcf;
+    
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
 
+form {
+    background-color: #6596ff;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 8px;
 }
 
 .text {
@@ -20,12 +31,12 @@ body {
 }
 
 a {
-    color: rgb(176, 240, 81);
+    color: rgb(84, 139, 0);
     transition: color 0.2s;
 }
 
 a:hover {
-    color: rgb(142, 194, 63);
+    color: rgb(29, 48, 0);
 }
 
 .bold {
@@ -47,15 +58,33 @@ a:hover {
 .footer {
     font-size: smaller;
     text-align: center;
+    margin: 5px;
+}
+
+#tombluescreenlink {
+    color: rgb(0, 4, 255);
+    transition: color 0.2s;
+}
+
+#tombluescreenlink:hover {
+    color: rgb(0, 1, 68);
+}
+
+.moduleHolder:first-child {
+    border-top: 0px none #79b3ff;
 }
 
 .moduleHolder {
     
-    border-top: 2px solid #ececec;
+    border-top: 2px solid #79b3ff;
     padding-top: 2px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #ececec;
+    border-bottom: 2px solid #79b3ff;
     
+}
+
+.moduleHolder:last-child {
+    border-bottom: 0px none #79b3ff;
 }
 
 .emptymodules {
@@ -100,8 +129,11 @@ input[type="text"]:hover {
 }
 
 #modulescroll {
+    color: rgb(0, 18, 78);
     padding-top: 10px;
     overflow-y: auto;
+    background-color: white;
+    padding: 5px;
 }
 
 .title {
