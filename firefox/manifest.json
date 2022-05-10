@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Aberystwyth Module Assistant",
-    "version": "1.0",
+    "version": "1.2",
     "description": "Search Aber Modules database",
     "icons":
         {
@@ -22,7 +22,12 @@
     ],
     "browser_action": {
         "default_icon": "aberlogo.png",
-        "default_title": "Aber Modules",
+        "default_title": "Aber Module Search",
         "default_popup": "datapopup.html"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+          "update_url": "https://tombluescreen.com/aber-module-assist/updates.json"
+        }
       }
 }
